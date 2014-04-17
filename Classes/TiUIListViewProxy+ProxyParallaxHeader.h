@@ -15,11 +15,8 @@
 
 @property (nonatomic, retain) UIImage * currentImage;
 
-+ (void) loadFromURL: (NSURL*) url callback:(void (^)(UIImage *image))callback;
-
 -(void)addParallaxWithView:(id)args;
 -(void)addParallaxWithImage:(id)args;
--(void)addParallaxWithLocalImage:(id)args;
 -(void)setSectionHeaderInset:(id)args;
 
 @end

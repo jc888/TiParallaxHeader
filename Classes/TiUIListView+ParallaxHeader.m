@@ -34,9 +34,9 @@
     [self.tableView addParallaxWithView: headerview.view andHeight:height];
 }
 
--(void)addParallaxWithImage:(UIImage *)image forHeight:(CGFloat)height
+-(void)addParallaxWithImage:(NSString *)url forHeight:(CGFloat)height
 {
-    [self.tableView addParallaxWithImage:image andHeight:height];
+    [self.tableView addParallaxWithImage:url andHeight:height];
 }
 
 -(void)setSectionHeaderInset:(CGFloat) height

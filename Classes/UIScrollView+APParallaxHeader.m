@@ -6,6 +6,7 @@
 //
 
 #import "UIScrollView+APParallaxHeader.h"
+#import "AsyncImageView.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -30,16 +31,16 @@ static char UIScrollViewParallaxView;
 
 @implementation UIScrollView (APParallaxHeader)
 
-- (void)addParallaxWithImage:(UIImage *)image andHeight:(CGFloat)height {
+- (void)addParallaxWithImage:(NSString *)url andHeight:(CGFloat)height {
     if(self.parallaxView) {
         if(self.parallaxView.currentSubView) [self.parallaxView.currentSubView removeFromSuperview];
-        [self.parallaxView.imageView setImage:image];
+        [self.parallaxView.imageView setImageURL:[NSURL URLWithString:url]];
     }
     else
     {
         APParallaxView *view = [[APParallaxView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, height)];
         [view setClipsToBounds:YES];
-        [view.imageView setImage:image];
+        [view.imageView setImageURL:[NSURL URLWithString:url]];
         
         view.scrollView = self;
         view.parallaxHeight = height;

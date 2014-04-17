@@ -14,16 +14,6 @@
 
 @implementation TiUIListViewProxy (ProxyParallaxHeader)
 
-+ (void) loadFromURL: (NSURL*) url callback:(void (^)(UIImage *image))callback {
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-    dispatch_async(queue, ^{
-        NSData * imageData = [NSData dataWithContentsOfURL:url];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            UIImage *image = [UIImage imageWithData:imageData];
-            callback(image);
-        });
-    });
-}
 
 -(void)setCurrentImage:(UIImage *)_currentImage
 {
@@ -54,39 +44,10 @@
     ENSURE_ARG_AT_INDEX(url,args,0,NSString);
     NSNumber * height = nil;
     ENSURE_ARG_AT_INDEX(height,args,1,NSNumber);
-    KrollCallback * callback = nil;
-    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback)
     
-    [TiUIListViewProxy loadFromURL:[NSURL URLWithString:url] callback:^(UIImage *image) {
-        
-        self.currentImage = image;
-        
-        TiUIListView *convert = (TiUIListView*) self.view;
-        [convert addParallaxWithImage:self.currentImage forHeight:[height floatValue]];
-        
-        if (callback != nil){
-            [callback call:@[@"complete"] thisObject:self];
-        }
-    }];
-}
-
--(void)addParallaxWithLocalImage:(id)args
-{
-    TiBlob * blob = nil;
-    ENSURE_ARG_AT_INDEX(blob,args,0,TiBlob);
-    NSNumber * height = nil;
-    ENSURE_ARG_AT_INDEX(height,args,1,NSNumber);
-    KrollCallback * callback = nil;
-    ENSURE_ARG_OR_NIL_AT_INDEX(callback, args, 2, KrollCallback)
     TiUIListView *convert = (TiUIListView*) self.view;
     
-    self.currentImage = [UIImage imageNamed:@"expand.jpg"];
-    
-    [convert addParallaxWithImage:self.currentImage forHeight:[height floatValue]];
-    
-    if (callback != nil){
-        [callback call:@[@"complete"] thisObject:self];
-    }
+    [convert addParallaxWithImage:url forHeight:[height floatValue]];
 }
 
 -(void)setSectionHeaderInset:(id)args

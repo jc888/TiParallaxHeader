@@ -19,7 +19,7 @@
 + (void) swizzle;
 
 -(void)addParallaxWithView:(TiViewProxy *)headerview withHeight: (CGFloat) height;
--(void)addParallaxWithImage:(UIImage *)image forHeight: (CGFloat) height;
+-(void)addParallaxWithImage:(NSString *)url forHeight: (CGFloat) height;
 -(void)setSectionHeaderInset:(CGFloat) height;
 
 @end

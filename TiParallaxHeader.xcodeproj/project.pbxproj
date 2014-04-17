@@ -38,6 +38,8 @@
 		B935DD6C190041390058B357 /* UITableView+HeaderSectionPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = B935DD6A190041390058B357 /* UITableView+HeaderSectionPosition.m */; };
 		B935DD6F190041BB0058B357 /* UIScrollView+APParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B935DD6D190041BB0058B357 /* UIScrollView+APParallaxHeader.h */; };
 		B935DD70190041BB0058B357 /* UIScrollView+APParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B935DD6E190041BB0058B357 /* UIScrollView+APParallaxHeader.m */; };
+		B935DD7B19004D840058B357 /* AsyncImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = B935DD7919004D840058B357 /* AsyncImageView.h */; };
+		B935DD7C19004D840058B357 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B935DD7A19004D840058B357 /* AsyncImageView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		B935DD6A190041390058B357 /* UITableView+HeaderSectionPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+HeaderSectionPosition.m"; path = "Classes/UITableView+HeaderSectionPosition.m"; sourceTree = "<group>"; };
 		B935DD6D190041BB0058B357 /* UIScrollView+APParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+APParallaxHeader.h"; path = "Classes/UIScrollView+APParallaxHeader.h"; sourceTree = "<group>"; };
 		B935DD6E190041BB0058B357 /* UIScrollView+APParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+APParallaxHeader.m"; path = "Classes/UIScrollView+APParallaxHeader.m"; sourceTree = "<group>"; };
+		B935DD7919004D840058B357 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = Classes/AsyncImageView.h; sourceTree = "<group>"; };
+		B935DD7A19004D840058B357 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = Classes/AsyncImageView.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libComCitytelecomTiparallaxheader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComCitytelecomTiparallaxheader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B935DD7919004D840058B357 /* AsyncImageView.h */,
+				B935DD7A19004D840058B357 /* AsyncImageView.m */,
 				24DE9E0F11C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.h */,
@@ -153,6 +159,7 @@
 				AA747D9F0F9514B9006C5449 /* ComCitytelecomTiparallaxheader_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.h in Headers */,
 				B935DD6219003F420058B357 /* TiUIListView+ParallaxHeader.h in Headers */,
+				B935DD7B19004D840058B357 /* AsyncImageView.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.h in Headers */,
 				B935DD6F190041BB0058B357 /* UIScrollView+APParallaxHeader.h in Headers */,
 			);
@@ -234,6 +241,7 @@
 				B935DD70190041BB0058B357 /* UIScrollView+APParallaxHeader.m in Sources */,
 				B935DD5F19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.m in Sources */,
 				B935DD6319003F420058B357 /* TiUIListView+ParallaxHeader.m in Sources */,
+				B935DD7C19004D840058B357 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
