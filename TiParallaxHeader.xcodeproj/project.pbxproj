@@ -28,6 +28,10 @@
 		24DE9E1211C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* ComCitytelecomTiparallaxheader_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComCitytelecomTiparallaxheader_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B935DD5E19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B935DD5C19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.h */; };
+		B935DD5F19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B935DD5D19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.m */; };
+		B935DD6219003F420058B357 /* TiUIListView+ParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B935DD6019003F420058B357 /* TiUIListView+ParallaxHeader.h */; };
+		B935DD6319003F420058B357 /* TiUIListView+ParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B935DD6119003F420058B357 /* TiUIListView+ParallaxHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +40,23 @@
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = "TiParallaxHeader";
+			remoteInfo = TiParallaxHeader;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComCitytelecomTiparallaxheaderModule.h"; path = "Classes/ComCitytelecomTiparallaxheaderModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComCitytelecomTiparallaxheaderModule.m"; path = "Classes/ComCitytelecomTiparallaxheaderModule.m"; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComCitytelecomTiparallaxheaderModule.h; path = Classes/ComCitytelecomTiparallaxheaderModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComCitytelecomTiparallaxheaderModule.m; path = Classes/ComCitytelecomTiparallaxheaderModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComCitytelecomTiparallaxheaderModuleAssets.h"; path = "Classes/ComCitytelecomTiparallaxheaderModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComCitytelecomTiparallaxheaderModuleAssets.m"; path = "Classes/ComCitytelecomTiparallaxheaderModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* ComCitytelecomTiparallaxheader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComCitytelecomTiparallaxheader_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComCitytelecomTiparallaxheaderModuleAssets.h; path = Classes/ComCitytelecomTiparallaxheaderModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComCitytelecomTiparallaxheaderModuleAssets.m; path = Classes/ComCitytelecomTiparallaxheaderModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ComCitytelecomTiparallaxheader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComCitytelecomTiparallaxheader_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libComCitytelecomTiparallaxheader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libComCitytelecomTiparallaxheader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B935DD5C19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiUIListViewProxy+ProxyParallaxHeader.h"; path = "Classes/TiUIListViewProxy+ProxyParallaxHeader.h"; sourceTree = "<group>"; };
+		B935DD5D19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiUIListViewProxy+ProxyParallaxHeader.m"; path = "Classes/TiUIListViewProxy+ProxyParallaxHeader.m"; sourceTree = "<group>"; };
+		B935DD6019003F420058B357 /* TiUIListView+ParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiUIListView+ParallaxHeader.h"; path = "Classes/TiUIListView+ParallaxHeader.h"; sourceTree = "<group>"; };
+		B935DD6119003F420058B357 /* TiUIListView+ParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiUIListView+ParallaxHeader.m"; path = "Classes/TiUIListView+ParallaxHeader.m"; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libComCitytelecomTiparallaxheader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComCitytelecomTiparallaxheader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +87,7 @@
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
-			name = "TiParallaxHeader";
+			name = TiParallaxHeader;
 			sourceTree = "<group>";
 		};
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
@@ -97,6 +105,10 @@
 				24DE9E1011C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.h */,
 				24DD6CF81134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.m */,
+				B935DD5C19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.h */,
+				B935DD5D19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.m */,
+				B935DD6019003F420058B357 /* TiUIListView+ParallaxHeader.h */,
+				B935DD6119003F420058B357 /* TiUIListView+ParallaxHeader.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -117,8 +129,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B935DD5E19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* ComCitytelecomTiparallaxheader_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.h in Headers */,
+				B935DD6219003F420058B357 /* TiUIListView+ParallaxHeader.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +152,8 @@
 			);
 			dependencies = (
 			);
-			name = "TiParallaxHeader";
-			productName = "TiParallaxHeader";
+			name = TiParallaxHeader;
+			productName = TiParallaxHeader;
 			productReference = D2AAC07E0554694100DB518D /* libComCitytelecomTiparallaxheader.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -148,6 +162,8 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiParallaxHeader" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -192,6 +208,8 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* ComCitytelecomTiparallaxheaderModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* ComCitytelecomTiparallaxheaderModuleAssets.m in Sources */,
+				B935DD5F19003DEC0058B357 /* TiUIListViewProxy+ProxyParallaxHeader.m in Sources */,
+				B935DD6319003F420058B357 /* TiUIListView+ParallaxHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,11 +230,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComCitytelecomTiparallaxheader.dst";
+				DSTROOT = /tmp/ComCitytelecomTiparallaxheader.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComCitytelecomTiparallaxheader_Prefix.pch";
+				GCC_PREFIX_HEADER = ComCitytelecomTiparallaxheader_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -235,7 +253,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComCitytelecomTiparallaxheader";
+				PRODUCT_NAME = ComCitytelecomTiparallaxheader;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -249,11 +267,11 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/ComCitytelecomTiparallaxheader.dst";
+				DSTROOT = /tmp/ComCitytelecomTiparallaxheader.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComCitytelecomTiparallaxheader_Prefix.pch";
+				GCC_PREFIX_HEADER = ComCitytelecomTiparallaxheader_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -270,7 +288,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComCitytelecomTiparallaxheader";
+				PRODUCT_NAME = ComCitytelecomTiparallaxheader;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -283,11 +301,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComCitytelecomTiparallaxheader.dst";
+				DSTROOT = /tmp/ComCitytelecomTiparallaxheader.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComCitytelecomTiparallaxheader_Prefix.pch";
+				GCC_PREFIX_HEADER = ComCitytelecomTiparallaxheader_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -305,7 +323,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComCitytelecomTiparallaxheader";
+				PRODUCT_NAME = ComCitytelecomTiparallaxheader;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -319,11 +337,11 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/ComCitytelecomTiparallaxheader.dst";
+				DSTROOT = /tmp/ComCitytelecomTiparallaxheader.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComCitytelecomTiparallaxheader_Prefix.pch";
+				GCC_PREFIX_HEADER = ComCitytelecomTiparallaxheader_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -339,7 +357,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComCitytelecomTiparallaxheader";
+				PRODUCT_NAME = ComCitytelecomTiparallaxheader;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
