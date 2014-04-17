@@ -1,6 +1,5 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
-    #import "TiUIListViewProxy+ProxyParallaxHeader.h"
     #import "TiUIListView+ParallaxHeader.h"
 #endif

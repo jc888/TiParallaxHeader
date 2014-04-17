@@ -8,7 +8,7 @@
 
 #import "TiUIListViewProxy+ProxyParallaxHeader.h"
 #import "TiUIListView+ParallaxHeader.h"
-#import "TiUIViewProxy.h"
+#import "TiUIListViewProxy.h"
 #import "TiProxy.h"
 #import <objc/runtime.h>
 
