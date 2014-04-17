@@ -8,6 +8,8 @@
 #import "TiBase.h"
 #import "TiHost.h"
 #import "TiUtils.h"
+#import "TiUIListView+ParallaxHeader.h"
+#import "UITableView+HeaderSectionPosition.h"
 
 @implementation ComCitytelecomTiparallaxheaderModule
 
@@ -32,6 +34,12 @@
 	// this method is called when the module is first loaded
 	// you *must* call the superclass
 	[super startup];
+    
+    //swizzle out the uitableview for the insets
+    [UITableView swizzle];
+    
+    //swizzle the listview
+    [TiUIListView swizzle];
 	
 	NSLog(@"[INFO] %@ loaded",self);
 }
