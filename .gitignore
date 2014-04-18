@@ -2,3 +2,5 @@ tmp
 bin
 build
 *.zip
+.DS_Store
+TiParallaxHeader.xcodeproj/project.xcworkspace/xcuserdata/jameschow.xcuserdatad/UserInterfaceState.xcuserstate
