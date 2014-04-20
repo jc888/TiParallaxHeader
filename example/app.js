@@ -17,9 +17,8 @@ var PARALLAX_HEADER_HEIGHT = 350;
 
 // ==== Parallax Header View ====
 var headerView = Ti.UI.createView({
-    top : 0,
     width : Ti.UI.FILL,
-    height : '350dp'
+    height : PARALLAX_HEADER_HEIGHT
 });
 
 var view1 = Ti.UI.createView({width : '150dp', backgroundColor : '#123'});
@@ -67,6 +66,8 @@ function onListViewPostlayout(e) {
     var imagePath = Titanium.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory, 'ParallaxImage.jpg').nativePath;
     listView.addParallaxWithImage(imagePath, PARALLAX_HEADER_HEIGHT);
     
+    win.remove(headerView);
+    
     //Parallax HeaderView
     listView.addParallaxWithView(headerView, PARALLAX_HEADER_HEIGHT);
     
@@ -84,8 +85,9 @@ function onListViewPostlayout(e) {
 //must wait till ListView has sized itself
 listView.addEventListener('postlayout',onListViewPostlayout);
 
-//HeaderView must be added to the window or a viewable parent, to size itself, before being inserted into the ListView
-win.add(headerView);
+//Before being inserted into the ListView, a HeaderView must be 
+//added to the window or a viewable parent, to enforce sizing calculation 
 win.add(listView);
+win.add(headerView);
 win.open();
 
