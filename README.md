@@ -6,10 +6,6 @@ The Parallax Header module extends the Appcelerator Titanium ListView
 Wrapper module for 
 https://github.com/apping/APParallaxHeader
 
-Thanks goto 
-http://b2cloud.com.au/tutorial/uitableview-section-header-positions/
-Mads Møller for showing how to override Titanium components
-
 The module is licensed under the MIT license.
 
 ### Demo Video
@@ -29,6 +25,10 @@ Download the latest distribution ZIP-file and consult the [Titanium Documentatio
 web: http://updatedisplaylist.com
 email:  james@jc888.co.uk
 
+## Credits
+[Mathias Amnell](http://twitter.com/amnell) at [Apping AB](http://apping.se) for APParallaxHeader
+http://b2cloud.com.au/tutorial/uitableview-section-header-positions/
+[Mads Møller](http://www.napp.dk) for showing how to override Titanium components
 
 ## License
 
