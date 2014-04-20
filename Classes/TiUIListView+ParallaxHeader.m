@@ -31,7 +31,7 @@
 {
     self.currentHeaderView = headerview;
     
-    [self.tableView addParallaxWithView: headerview.view andHeight:height];
+    [self.tableView addParallaxWithView: headerview andHeight:height];
 }
 
 -(void)addParallaxWithImage:(NSString *)url forHeight:(CGFloat)height

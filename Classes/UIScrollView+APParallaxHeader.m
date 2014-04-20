@@ -57,18 +57,18 @@ static char UIScrollViewParallaxView;
     }
 }
 
-- (void)addParallaxWithView:(UIView*)view andHeight:(CGFloat)height {
+- (void)addParallaxWithView:(TiViewProxy*)proxyView andHeight:(CGFloat)height {
     if(self.parallaxView) {
         [self.parallaxView.currentSubView removeFromSuperview];
-        [view setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-        [self.parallaxView addSubview:view];
+        //[proxyView.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+        [self.parallaxView addSubview:proxyView.view];
     }
     else
     {
-        APParallaxView *parallaxView = [[APParallaxView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, height)];
+        APParallaxView *parallaxView = [[APParallaxView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(proxyView.view.frame), height)];
         [parallaxView setClipsToBounds:YES];
-        [view setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-        [parallaxView addSubview:view];
+        //[proxyView.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+        [parallaxView addSubview:proxyView.view];
         
         parallaxView.scrollView = self;
         parallaxView.parallaxHeight = height;

@@ -13,7 +13,7 @@
 @interface UIScrollView (APParallaxHeader)
 
 - (void)addParallaxWithImage:(NSString *)url andHeight:(CGFloat)height;
-- (void)addParallaxWithView:(UIView*)view andHeight:(CGFloat)height;
+- (void)addParallaxWithView:(TiViewProxy*)view andHeight:(CGFloat)height;
 
 @property (nonatomic, strong, readonly) APParallaxView *parallaxView;
 @property (nonatomic, assign) BOOL showsParallax;
