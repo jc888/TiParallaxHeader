@@ -60,7 +60,17 @@ Add a titanium View to the header, will center vertically and scroll in a parall
 The added view must specify the same height as the header i.e width=350
 
 ```javascript
-listView.addParallaxWithImage('http://example.com/image.png', 350);
+var headerView = Ti.UI.createView({
+    width : Ti.UI.FILL,
+    height : 350,
+    backgroundColor:'red'
+});
+
+//must be added to a viewable parent for sizing
+win.add(headerView);
+
+//this will reparent the headerView
+listView.addParallaxWithView(headerView, 350);
 ```
 
 ### setSectionHeaderInset
