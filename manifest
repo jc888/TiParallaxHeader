@@ -4,9 +4,9 @@
 #
 version: 0.1
 apiversion: 2
-description: Parallax Header for the Titanium ListView
+description: Parallax HeaderView for the Titanium ListView
 author: James Chow
-license: Specify your license
+license: MIT
 copyright: City Telecom Services ltd
 
 
