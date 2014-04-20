@@ -57,26 +57,11 @@ This method allows giving an offset to the Y position of the headers.
 listView.setSectionHeaderInset(-350);
 ```
 
-
-## Quick Start
-
-### Get it [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/com.citytelecom.tiparallaxheader)
-Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_a_Module) on how install it, or simply use the [gitTio CLI](http://gitt.io/cli):
-
-`$ gittio install com.citytelecom.tiparallaxheader`
-
 ## Author
 
 **James Chow**  
 web: http://updatedisplaylist.com
 email:  james@jc888.co.uk
-
-## Credits
-[Mathias Amnell](http://twitter.com/amnell) at [Apping AB](http://apping.se) for APParallaxHeader
-
-http://b2cloud.com.au/tutorial/uitableview-section-header-positions/
-
-[Mads Møller](http://www.napp.dk) for showing how to override Titanium components
 
 ## License
 
