@@ -25,20 +25,6 @@ Do this only once for your app, preferably in your app.js / alloy.js file.
 This will extend ListView with additional methods
 
 
-## Usage
-
-ListView will be extended with the following methods. Only call them after the ListView has finished renderering, by listening to the 'postlayout' event
-
-```javascript
-function onListViewPostlayout(e) {
-    // attach the parallax header
-    listView.addParallaxWithImage('http://example.com/image.png', 350);
-}
-//must wait till ListView has sized itself
-listView.addEventListener('postlayout',onListViewPostlayout);
-```
-## ListView functions
-
 ### addParallaxWithImage
 
 Add an expanding parallax image for the background of the header
