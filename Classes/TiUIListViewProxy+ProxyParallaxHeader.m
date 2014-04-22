@@ -27,6 +27,7 @@
 
 -(void)addParallaxWithView:(id)args
 {
+    ENSURE_UI_THREAD_1_ARG(args);
     
     TiViewProxy *headerView = nil;
     ENSURE_ARG_AT_INDEX(headerView,args,0,TiViewProxy);
@@ -40,6 +41,8 @@
 
 -(void)addParallaxWithImage:(id)args
 {
+    ENSURE_UI_THREAD_1_ARG(args);
+    
     NSString * url = nil;
     ENSURE_ARG_AT_INDEX(url,args,0,NSString);
     NSNumber * height = nil;
@@ -52,12 +55,24 @@
 
 -(void)setSectionHeaderInset:(id)args
 {
+    ENSURE_UI_THREAD_1_ARG(args);
     ENSURE_SINGLE_ARG(args, NSNumber);
     
     CGFloat height = [(NSNumber*)args floatValue];
     
     TiUIListView *convert = (TiUIListView*) self.view;
     [convert setSectionHeaderInset:height];
+}
+
+-(void)setFadeoutOverHeight:(id)args
+{
+    ENSURE_UI_THREAD_1_ARG(args);
+    
+    ENSURE_SINGLE_ARG(args, NSNumber);
+
+    TiUIListView *convert = (TiUIListView*) self.view;
+    
+    [convert setFadeoutOverHeight:(NSNumber*)args];
 }
 
 @end

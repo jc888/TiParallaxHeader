@@ -1,6 +1,6 @@
 //
 //  UITableView+HeaderSectionPosition.h
-//  SpotifyListView
+//  Category to extend UITableView, which TiUIListView uses
 //
 //  Created by James Chow on 11/04/2014.
 //

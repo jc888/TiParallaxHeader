@@ -14,6 +14,7 @@
 
 - (void)addParallaxWithImage:(NSString *)url andHeight:(CGFloat)height;
 - (void)addParallaxWithView:(TiViewProxy*)view andHeight:(CGFloat)height;
+- (void)setFadeoutOverHeight:(NSNumber*)height;
 
 @property (nonatomic, strong, readonly) APParallaxView *parallaxView;
 @property (nonatomic, assign) BOOL showsParallax;
@@ -33,6 +34,7 @@ typedef NSUInteger APParallaxTrackingState;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIView *currentSubView;
 @property (nonatomic, strong) APParallaxShadowView *shadowView;
+@property (nonatomic, strong) NSNumber *fadeoutOverHeight;
 
 @end
 

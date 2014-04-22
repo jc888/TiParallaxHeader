@@ -57,6 +57,10 @@ static char UIScrollViewParallaxView;
     }
 }
 
+- (void)setFadeoutOverHeight:(NSNumber*)height {
+    self.parallaxView.fadeoutOverHeight = height;
+}
+
 - (void)addParallaxWithView:(TiViewProxy*)proxyView andHeight:(CGFloat)height {
     if(self.parallaxView) {
         [self.parallaxView.currentSubView removeFromSuperview];
@@ -185,6 +189,9 @@ static char UIScrollViewParallaxView;
         self.shadowView = [[APParallaxShadowView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(frame)-8, CGRectGetWidth(frame), 8)];
         [self.shadowView setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin];
         [self addSubview:self.shadowView];
+        
+        self.fadeoutOverHeight = nil;
+        self.currentSubView = nil;
     }
     
     return self;
@@ -229,7 +236,34 @@ static char UIScrollViewParallaxView;
     
     if(self.state == APParallaxTrackingActive) {
         CGFloat yOffset = contentOffset.y*-1;
+        
         [self setFrame:CGRectMake(0, contentOffset.y, CGRectGetWidth(self.frame), yOffset)];
+        
+        //size the TiView
+        if (self.currentSubView != nil)
+        {
+           [self.currentSubView setFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), yOffset)];
+        }
+        
+        //Fade out TiView
+        if (self.fadeoutOverHeight != nil)
+        {
+            CGFloat diff = 1;
+            CGFloat fadeout = [self.fadeoutOverHeight floatValue];
+            if (yOffset < self.parallaxHeight)
+            {
+                diff = 1;
+            }
+            else if ( yOffset >= (self.parallaxHeight + fadeout) )
+            {
+                diff = 0;
+            }
+            else if (yOffset < (self.parallaxHeight + fadeout) )
+            {
+                diff = 1-((yOffset - self.parallaxHeight)/fadeout);
+            }
+            [self.currentSubView setAlpha:diff];
+        }
     }
 }
 

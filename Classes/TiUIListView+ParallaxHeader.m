@@ -44,6 +44,11 @@
     [self.tableView setHeaderViewInsets:UIEdgeInsetsMake(height, 0, 0, 0)];
 }
 
+-(void)setFadeoutOverHeight:(NSNumber*) height
+{
+    [self.tableView setFadeoutOverHeight:height];
+}
+
 -(void)setCurrentImage:(UIImage *)_currentImage
 {
     objc_setAssociatedObject(self, @selector(currentImage), _currentImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

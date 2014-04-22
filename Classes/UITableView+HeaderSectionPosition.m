@@ -1,6 +1,6 @@
 //
 //  UITableView+HeaderSectionPosition.m
-//  SpotifyListView
+//  Category to extend UITableView, which TiUIListView uses
 //
 //  Created by James Chow on 11/04/2014.
 // http://b2cloud.com.au/tutorial/uitableview-section-header-positions/
@@ -57,7 +57,6 @@ BOOL shouldManuallyLayoutHeaderViews;
     return convert;
 }
 
-#pragma mark -
 #pragma mark Private
 
 - (void) layoutHeaderViews

@@ -18,5 +18,5 @@
 -(void)addParallaxWithView:(id)args;
 -(void)addParallaxWithImage:(id)args;
 -(void)setSectionHeaderInset:(id)args;
-
+-(void)setFadeoutOverHeight:(id)args;
 @end

@@ -2,8 +2,8 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.1
-apiversion: 2
+version: 0.2
+apiversion: 3
 description: Parallax HeaderView for the Titanium ListView
 author: James Chow
 license: MIT

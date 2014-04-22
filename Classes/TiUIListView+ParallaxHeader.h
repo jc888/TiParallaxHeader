@@ -21,5 +21,6 @@
 -(void)addParallaxWithView:(TiViewProxy *)headerview withHeight: (CGFloat) height;
 -(void)addParallaxWithImage:(NSString *)url forHeight: (CGFloat) height;
 -(void)setSectionHeaderInset:(CGFloat) height;
+-(void)setFadeoutOverHeight:(NSNumber*) height;
 
 @end

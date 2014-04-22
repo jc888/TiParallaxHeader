@@ -25,6 +25,20 @@ Do this only once for your app, preferably in your app.js / alloy.js file.
 This will extend ListView with additional methods
 
 
+## Usage
+
+ListView will be extended with the following methods. Only call them after the ListView has finished renderering, by listening to the 'postlayout' event
+
+```javascript
+function onListViewPostlayout(e) {
+    // attach the parallax header
+    listView.addParallaxWithImage('http://example.com/image.png', 350);
+}
+//must wait till ListView has sized itself
+listView.addEventListener('postlayout',onListViewPostlayout);
+```
+## ListView functions
+
 ### addParallaxWithImage
 
 Add an expanding parallax image for the background of the header
@@ -42,18 +56,12 @@ listView.addParallaxWithImage('http://example.com/image.png', 350);
 ```
 
 ### addParallaxWithView
-Add a titanium View to the header, will center vertically and scroll in a parallax fashion.
-The added view must specify the same height as the header i.e width=350
+Add a titanium View to the header, automatically set to resize within header area
 
 ```javascript
 var headerView = Ti.UI.createView({
-    width : Ti.UI.FILL,
-    height : 350,
     backgroundColor:'red'
 });
-
-//must be added to a viewable parent for sizing
-win.add(headerView);
 
 //this will reparent the headerView
 listView.addParallaxWithView(headerView, 350);
@@ -65,6 +73,15 @@ This method allows giving an offset to the Y position of the headers.
 
 ```javascript
 listView.setSectionHeaderInset(-350);
+```
+
+### setFadeoutOverHeight
+Calling this method will create a fade out effect of the HeaderView, when scrolling greater then the header height.
+Accepts a single parameter, of a height in pixels.
+
+```javascript
+//pulling the scroll so that the header expands beyond the height (>350) within 50 pixels the view will gradually fade
+listView.setFadeoutOverHeight(50)
 ```
 
 ## Author

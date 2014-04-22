@@ -1,10 +1,7 @@
-//
-//  NSObject+JRSwizzle.h
-//  SpotifyListView
-//
-//  Created by James Chow on 11/04/2014.
-//
-//
+// JRSwizzle.h semver:1.0
+//   Copyright (c) 2007-2011 Jonathan 'Wolf' Rentzsch: http://rentzsch.com
+//   Some rights reserved: http://opensource.org/licenses/MIT
+//   https://github.com/rentzsch/jrswizzle
 
 #import <Foundation/Foundation.h>
 
