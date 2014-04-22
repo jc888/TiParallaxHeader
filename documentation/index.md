@@ -1,5 +1,9 @@
 # TiParallaxHeader Module
 
+### Demo Video
+
+[![Gif of effect](http://updatedisplaylist.com/images/TiParallaxHeader-0_2.gif)](http://youtu.be/H_VSO-k_OLw)
+
 ## Description
 
 Insert a slightly bouncy parallax scrolling header for a Titanium ListView.

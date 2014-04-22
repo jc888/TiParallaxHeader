@@ -11,7 +11,7 @@ The module is licensed under the MIT license.
 
 ### Demo Video
 
-[![IMAGE ALT TEXT HERE](http://updatedisplaylist.com/images/TiParallaxHeader1.gif)](http://youtu.be/5K7LdYHW6Ac)
+[![Gif of effect](http://updatedisplaylist.com/images/TiParallaxHeader-0_2.gif)](http://youtu.be/H_VSO-k_OLw)
 
 ## Quick Start
 
